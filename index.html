@@ -6,54 +6,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A&P Rentals</title>
   <style>
-    body { font-family: Arial; max-width: 800px; margin: auto; padding: 2em; background: #f9f9f9; }
-    h1 { text-align: center; }
-    .listing { border-bottom: 1px solid #ccc; padding: 1em 0; }
-    .title { font-size: 1.2em; font-weight: bold; }
-    .price { color: green; margin-top: 0.5em; }
-    a.button { display: inline-block; margin-top: 1em; background: #007bff; color: #fff; padding: 0.5em 1em; text-decoration: none; border-radius: 4px; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: auto;
+      padding: 2em;
+      background: url('bozeman-skyline.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+    h1, p { text-align: center; }
+    .listing {
+      background: rgba(0, 0, 0, 0.6);
+      margin: 2em 0;
+      padding: 1em;
+      border-radius: 8px;
+    }
+    .title {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    .price {
+      color: #90ee90;
+      margin-top: 0.5em;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 1em 0;
+    }
+    .gallery img {
+      width: calc(20% - 10px);
+      height: auto;
+      border-radius: 6px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1em;
+      background: #007bff;
+      color: #fff;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      font-size: 0.9em;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1em;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
   <h1>A&P Rentals – Bozeman, MT</h1>
-  <p style="text-align:center;">Click “Apply Now” to begin your rental application.</p>
+  <p>Click “Apply Now” to begin your rental application. All properties are pet-friendly.</p>
 
   <div class="listing">
     <div class="title">4442 Alexander St</div>
-    <div>Main house + guest house, huge yard and creek nearby</div>
-    <div class="price">$3,200/mo</div>
+    <div class="gallery">
+      <img src="alexander1.jpg" alt="4442 Alexander St photo 1" />
+      <img src="alexander2.jpg" alt="4442 Alexander St photo 2" />
+      <img src="alexander3.jpg" alt="4442 Alexander St photo 3" />
+      <img src="alexander4.jpg" alt="4442 Alexander St photo 4" />
+      <img src="alexander5.jpg" alt="4442 Alexander St photo 5" />
+    </div>
+    <div>Main house + guest house, huge yard and creek nearby – Pet-friendly</div>
+    <div class="price">$3200/mo</div>
     <a href="https://form.jotform.com/251556567140054" target="_blank" class="button">Apply Now</a>
   </div>
+    
   <div class="listing">
     <div class="title">46 Violet Rd</div>
-    <div>Large lot with big potential, investor-friendly</div>
-    <div class="price">$1,900/mo</div>
+    <div class="gallery">
+      <img src="violet1.jpg" alt="46 Violet Rd photo 1" />
+      <img src="violet2.jpg" alt="46 Violet Rd photo 2" />
+      <img src="violet3.jpg" alt="46 Violet Rd photo 3" />
+      <img src="violet4.jpg" alt="46 Violet Rd photo 4" />
+      <img src="violet5.jpg" alt="46 Violet Rd photo 5" />
+    </div>
+    <div>Large lot with big potential – Pet-friendly</div>
+    <div class="price">$1900/mo</div>
     <a href="https://form.jotform.com/251556567140054" target="_blank" class="button">Apply Now</a>
   </div>
+    
   <div class="listing">
     <div class="title">890 Hidden Valley Rd UNIT 16</div>
-    <div>Fenced yard, pet-friendly, updated interior</div>
-    <div class="price">$1,750/mo</div>
+    <div class="gallery">
+      <img src="hidden-valley1.jpg" alt="890 Hidden Valley Rd UNIT 16 photo 1" />
+      <img src="hidden-valley2.jpg" alt="890 Hidden Valley Rd UNIT 16 photo 2" />
+      <img src="hidden-valley3.jpg" alt="890 Hidden Valley Rd UNIT 16 photo 3" />
+      <img src="hidden-valley4.jpg" alt="890 Hidden Valley Rd UNIT 16 photo 4" />
+      <img src="hidden-valley5.jpg" alt="890 Hidden Valley Rd UNIT 16 photo 5" />
+    </div>
+    <div>Fenced yard, updated interior – Pet-friendly</div>
+    <div class="price">$1750/mo</div>
     <a href="https://form.jotform.com/251556567140054" target="_blank" class="button">Apply Now</a>
   </div>
+    
   <div class="listing">
     <div class="title">2405 W College St TRAILER 54</div>
-    <div>Spacious 4-bedroom, laminate floors, near bus route</div>
-    <div class="price">$1,950/mo</div>
+    <div class="gallery">
+      <img src="college1.jpg" alt="2405 W College St TRAILER 54 photo 1" />
+      <img src="college2.jpg" alt="2405 W College St TRAILER 54 photo 2" />
+      <img src="college3.jpg" alt="2405 W College St TRAILER 54 photo 3" />
+      <img src="college4.jpg" alt="2405 W College St TRAILER 54 photo 4" />
+      <img src="college5.jpg" alt="2405 W College St TRAILER 54 photo 5" />
+    </div>
+    <div>Spacious 4-bedroom, laminate floors, near bus route – Pet-friendly</div>
+    <div class="price">$1950/mo</div>
     <a href="https://form.jotform.com/251556567140054" target="_blank" class="button">Apply Now</a>
   </div>
+    
   <div class="listing">
     <div class="title">1605 W Durston Rd #51</div>
-    <div>Cozy corner lot mobile home, porch, new roof</div>
-    <div class="price">$1,600/mo</div>
+    <div class="gallery">
+      <img src="durston1.jpg" alt="1605 W Durston Rd #51 photo 1" />
+      <img src="durston2.jpg" alt="1605 W Durston Rd #51 photo 2" />
+      <img src="durston3.jpg" alt="1605 W Durston Rd #51 photo 3" />
+      <img src="durston4.jpg" alt="1605 W Durston Rd #51 photo 4" />
+      <img src="durston5.jpg" alt="1605 W Durston Rd #51 photo 5" />
+    </div>
+    <div>Cozy corner lot mobile home, porch, new roof – Pet-friendly</div>
+    <div class="price">$1600/mo</div>
     <a href="https://form.jotform.com/251556567140054" target="_blank" class="button">Apply Now</a>
   </div>
+    
   <div class="listing">
     <div class="title">61 Lancelot Ln</div>
-    <div>Affordable 2-bed, updated flooring, King Arthur Park</div>
-    <div class="price">$1,400/mo</div>
+    <div class="gallery">
+      <img src="lancelot1.jpg" alt="61 Lancelot Ln photo 1" />
+      <img src="lancelot2.jpg" alt="61 Lancelot Ln photo 2" />
+      <img src="lancelot3.jpg" alt="61 Lancelot Ln photo 3" />
+      <img src="lancelot4.jpg" alt="61 Lancelot Ln photo 4" />
+      <img src="lancelot5.jpg" alt="61 Lancelot Ln photo 5" />
+    </div>
+    <div>Affordable 2-bed, updated flooring, King Arthur Park – Pet-friendly</div>
+    <div class="price">$1400/mo</div>
     <a href="https://form.jotform.com/251556567140054" target="_blank" class="button">Apply Now</a>
   </div>
-
+    
+  <footer>
+    <strong>A&P Rentals</strong><br>
+    📞 406-430-8739<br>
+    Serving Bozeman, MT and surrounding areas
+  </footer>
 </body>
 </html>
